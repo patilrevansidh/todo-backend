@@ -1,0 +1,36 @@
+{
+  "name": "todo-node",
+  "version": "1.0.0",
+  "description": "Backend for todo application list with GET,PUT,POST methods",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node -r babel-register src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "NODE_ENV=development node-dev -r babel-register src/server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "rest",
+    "api"
+  ],
+  "author": "Revansiddh Patil",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "mongoose": "^5.7.4",
+    "node-dev": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.3"
+  }
+}
