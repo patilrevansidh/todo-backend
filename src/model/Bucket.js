@@ -5,7 +5,7 @@ export const schemaOptions = {
 };
 
 const bucketSchema = new mongoose.Schema({
-  title: { type: String, unique: true, required: true }
+  title: { type: String, required: true }
 }, schemaOptions)
 
 export const Bucket = mongoose.model('Bucket', bucketSchema);
