@@ -8,7 +8,8 @@ const todoDTOPopuldation = [
 export class ToDoService {
   static async addToDo(payload) {
     try {
-      const toDo = await ToDo(payload).save()
+      let toDo = await ToDo(payload).save();
+      toDo = await ToDo.populate(toDo, todoDTOPopuldation);
       return toDo;
     } catch (error) {
       throw error;
