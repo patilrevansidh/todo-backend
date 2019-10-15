@@ -10,7 +10,7 @@ const todoSchema = new mongoose.Schema({
     required: true
   },
   description: { type: String, required: true },
-  isDone: { type: String, required: true, default: false },  
+  isDone: { type: Boolean, required: true, default: false },  
 })
 
 export const ToDo = mongoose.model('Todo', todoSchema);
